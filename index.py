@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 from urllib.request import urlopen
-from bs4 import BeautifulSoup
+#from bs4 import BeautifulSoup
 #import spacy
 
 # Load German tokenizer, tagger, parser and NER
