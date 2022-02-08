@@ -12,7 +12,7 @@ def index():
         temp = name
         # doc = nlp(name)
         # name = check_for_adjectives(doc)
-    return render_template('index.html', name=name, temp=temp)
+    return render_template('form.html', name=name, temp=temp)
 
 if __name__ == '__main__':
     app.run(debug=True)
