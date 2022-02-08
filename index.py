@@ -1,4 +1,11 @@
 from flask import Flask, render_template, request
+from urllib.request import urlopen
+from bs4 import BeautifulSoup
+#import spacy
+
+# Load German tokenizer, tagger, parser and NER
+#nlp = spacy.load("de_core_news_sm")
+
 app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
